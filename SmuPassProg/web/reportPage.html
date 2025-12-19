@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>학생부 종합전형 분석 리포트</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2e;
+      --card2:#0b162a;
+      --line:#1c2b4a;
+      --text:#e6edf7;
+      --muted:#a9b7d1;
+      --blue:#4ea1ff;
+      --blue2:#2f6fff;
+      --good:#3bd6a5;
+      --bad:#ff6b7a;
+      --warn:#ffcc66;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Apple SD Gothic Neo, Noto Sans KR, sans-serif;
+      background: radial-gradient(1100px 500px at 15% -10%, rgba(78,161,255,.30), transparent),
+                  radial-gradient(900px 400px at 90% 10%, rgba(47,111,255,.22), transparent),
+                  var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:1200px;margin:32px auto;padding:0 18px 40px}
+    h1{margin:0 0 8px;font-size:22px;font-weight:800;letter-spacing:-.02em}
+    .sub{color:var(--muted);margin:0 0 22px}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .row{display:grid;grid-template-columns: 420px 1fr;gap:14px;align-items:start}
+    @media (max-width: 980px){ .row{grid-template-columns:1fr} }
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid rgba(78,161,255,.45);
+      background: linear-gradient(180deg, rgba(78,161,255,.20), rgba(47,111,255,.12));
+      color:var(--text);
+      font-weight:750;
+      cursor:pointer;
+      width:100%;
+    }
+    .btn:hover{border-color:rgba(78,161,255,.7)}
+    .btn:disabled{opacity:.55;cursor:not-allowed}
+    .hint{font-size:13px;color:var(--muted);line-height:1.55;margin-top:10px}
+    .status{margin-top:10px;white-space:pre-wrap;font-size:13px;color:var(--muted)}
+    .status.ok{color:var(--good)}
+    .status.bad{color:var(--bad)}
+    .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+    @media (max-width: 980px){ .kpi{grid-template-columns:repeat(2,1fr)} }
+    .k{padding:12px;border:1px solid var(--line);border-radius:12px;background:rgba(0,0,0,.14)}
+    .k .t{font-size:12px;color:var(--muted)}
+    .k .v{font-size:20px;font-weight:850;margin-top:6px}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+    @media (max-width: 980px){ .grid2{grid-template-columns:1fr} }
+    img{width:100%;border-radius:12px;border:1px solid var(--line);background:#081020}
+    .log{
+      margin-top:14px;
+      background:rgba(0,0,0,.28);
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:12px;
+      max-height:340px;
+      overflow:auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size:12px;
+      white-space:pre-wrap;
+      color:#cfe3ff;
+    }
+    .secTitle{margin:0 0 10px;font-size:15px;font-weight:800}
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    th,td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+    th{color:var(--muted);font-weight:700;text-align:left}
+    .tag{display:inline-flex;align-items:center;gap:8px}
+    .pill{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:2px 8px;border-radius:999px;
+      border:1px solid var(--line);
+      font-size:12px;color:var(--muted);
+      background: rgba(0,0,0,.18);
+    }
+    .pill.pass{border-color:rgba(59,214,165,.35);color:var(--good)}
+    .pill.fail{border-color:rgba(255,107,122,.35);color:var(--bad)}
+    .pill.trim{border-color:rgba(255,204,102,.35);color:var(--warn)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>학생부 종합전형 분석 리포트</h1>
+    <p class="sub">한 번 클릭 → 모집단 분석/절사/컷 산정/PCA → (main.py가 띄우는 파일 선택창에서) 입력 1건 선택 → 최종 결과까지 동일 흐름으로 출력</p>
+
+    <div class="row">
+      <div class="card">
+        <button class="btn" id="btnRunAll">분석 시작 (모집단 + 입력 파일 1건 선택)</button>
+        <div class="hint">
+          프로젝트 루트에 <b>censored_txt.zip</b> 또는 <b>censored_txt/</b>가 있어야 합니다.<br/>
+          버튼을 누르면 서버가 <b>main.py</b>를 1회 실행합니다. (터미널 출력은 아래 로그에 그대로 표시)
+        </div>
+        <div id="statusText" class="status"></div>
+
+        <div class="kpi" id="kpiRow" style="display:none">
+          <div class="k"><div class="t">전체 파일</div><div class="v" id="vTotal">-</div></div>
+          <div class="k"><div class="t">평가 대상(절사 후)</div><div class="v" id="vEligible">-</div></div>
+          <div class="k"><div class="t">합격 인원</div><div class="v" id="vAccept">-</div></div>
+          <div class="k"><div class="t">총점 컷</div><div class="v" id="vCut">-</div></div>
+        </div>
+
+        <div id="singleBox" style="display:none;margin-top:14px">
+          <h3 class="secTitle">입력 1건 결과</h3>
+          <div class="kpi" style="grid-template-columns:repeat(3,1fr)">
+            <div class="k"><div class="t">총점</div><div class="v" id="sTotal">-</div></div>
+            <div class="k"><div class="t">총점 컷 통과</div><div class="v" id="sPassTotal">-</div></div>
+            <div class="k"><div class="t">최종 합격</div><div class="v" id="sFinal">-</div></div>
+          </div>
+          <div class="hint" id="sDetail" style="margin-top:10px;white-space:pre-wrap"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="secTitle">PCA 시각화</h3>
+        <div class="grid2">
+          <div><img id="imgScatter" alt="PCA Scatter"/></div>
+          <div><img id="imgHeat" alt="PCA Heatmap"/></div>
+        </div>
+
+        <h3 class="secTitle" style="margin-top:16px">터미널 출력 로그 (main.py stdout)</h3>
+        <pre id="logOutput" class="log">아직 실행 전입니다.</pre>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h3 class="secTitle">모집단(69명) 상세 목록</h3>
+      <div class="hint" id="trimHint">실행 후 절사/컷 정보가 표시됩니다.</div>
+      <div style="overflow:auto;margin-top:10px">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:70px">순위</th>
+              <th>파일명</th>
+              <th style="width:90px">총점</th>
+              <th style="width:120px">상태</th>
+              <th style="width:90px">PC1</th>
+              <th style="width:90px">PC2</th>
+              <th style="width:110px">유형</th>
+            </tr>
+          </thead>
+          <tbody id="tblBody">
+            <tr><td colspan="7" style="color:var(--muted)">아직 실행 전입니다.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js?v=20251220"></script>
+</body>
+</html>
