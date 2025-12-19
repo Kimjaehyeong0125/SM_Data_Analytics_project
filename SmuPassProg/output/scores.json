@@ -1,0 +1,2528 @@
+{
+  "summary": {
+    "version": "1.0",
+    "source": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt",
+    "total_files": 69,
+    "ratio": 10.0,
+    "accepted_count": 6,
+    "trim": {
+      "mode": "both",
+      "pct": 0.1,
+      "top_trimmed": 7,
+      "bottom_trimmed": 7,
+      "eligible_count": 55,
+      "trimmed_top": [
+        {
+          "rank": 1,
+          "filename": "202511291_1_자유전공학부(인문사회계열)_조은진_정시_censored.txt",
+          "total_score": 63.758
+        },
+        {
+          "rank": 2,
+          "filename": "202110491_3학년_경제금융_윤도경_정시_censored.txt",
+          "total_score": 52.204
+        },
+        {
+          "rank": 3,
+          "filename": "201910671_4학년_글로벌경영학과_김재욱_수시_censored.txt",
+          "total_score": 51.25
+        },
+        {
+          "rank": 4,
+          "filename": "202311093_1학년_컴퓨터과학과_유선웅_정시_censored.txt",
+          "total_score": 43.792
+        },
+        {
+          "rank": 5,
+          "filename": "202410723_2학년_컴퓨터과학과_이정원_수시_censored.txt",
+          "total_score": 42.5
+        },
+        {
+          "rank": 6,
+          "filename": "202510801_1학년_컴퓨터과학과_문서진_수시_censored.txt",
+          "total_score": 42.083
+        },
+        {
+          "rank": 7,
+          "filename": "202511293_1학년_컴퓨터과학과_주서연_정시_censored.txt",
+          "total_score": 41.062
+        }
+      ],
+      "trimmed_bottom": [
+        {
+          "rank": 63,
+          "filename": "202511389_1학년_컴퓨터과학과_양석현_수시_censored.txt",
+          "total_score": 20.0
+        },
+        {
+          "rank": 64,
+          "filename": "202511391_1학년_자유전공(it계열)_윤성재_수시_censored.txt",
+          "total_score": 19.167
+        },
+        {
+          "rank": 65,
+          "filename": "201910936_3_컴퓨터과학과_김연수_정시_censored.txt",
+          "total_score": 18.333
+        },
+        {
+          "rank": 66,
+          "filename": "202211046_4_지능IoT융합_이서진_수시_censored.txt",
+          "total_score": 17.5
+        },
+        {
+          "rank": 67,
+          "filename": "202215075_4학년_컴퓨터과학과_윤용선_편입_censored.txt",
+          "total_score": 17.33
+        },
+        {
+          "rank": 68,
+          "filename": "202410821_2_컴퓨터과학전공_권서윤_정시_censored.txt",
+          "total_score": 8.333
+        },
+        {
+          "rank": 69,
+          "filename": "202510818_1학년_컴퓨터과학과_성현재_수시_censored.txt",
+          "total_score": 4.167
+        }
+      ]
+    },
+    "cutoff_total_score": 38.967,
+    "score_stats": {
+      "min": 4.167,
+      "max": 63.758,
+      "mean": 30.71387,
+      "std": 9.492099,
+      "p10": 20.0,
+      "p50": 30.0,
+      "p90": 40.646,
+      "trimmed_mean_10pct": 30.505965
+    },
+    "cutoff_record": {
+      "filename": "202511602_1_컴퓨터과학과_최준영_정시_censored.txt",
+      "total_score": 38.967,
+      "structured_score": 64.0,
+      "unstructured_score": 36.6664
+    },
+    "outputs": {
+      "scores_csv": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\SmuPassProg\\output\\scores.csv",
+      "scores_json": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\SmuPassProg\\output\\scores.json"
+    }
+  },
+  "results": [
+    {
+      "filename": "202511291_1_자유전공학부(인문사회계열)_조은진_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511291_1_자유전공학부(인문사회계열)_조은진_정시_censored.txt",
+      "total_score": 63.758,
+      "structured_score": 89.0,
+      "unstructured_score": 60.8334,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 100.0,
+        "self_directed_major": 25.0,
+        "diligence_collaboration": 66.667,
+        "academic_achievement_mixed": 69.5
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 100.0
+      },
+      "debug": {
+        "structured_rows_found": 2
+      },
+      "rank": 1,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_TOP"
+    },
+    {
+      "filename": "202110491_3학년_경제금융_윤도경_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202110491_3학년_경제금융_윤도경_정시_censored.txt",
+      "total_score": 52.204,
+      "structured_score": 90.5,
+      "unstructured_score": 49.16675000000001,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 66.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 66.667,
+        "academic_achievement_mixed": 70.25
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 66.66666666666666
+      },
+      "debug": {
+        "structured_rows_found": 1
+      },
+      "rank": 2,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_TOP"
+    },
+    {
+      "filename": "201910671_4학년_글로벌경영학과_김재욱_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\201910671_4학년_글로벌경영학과_김재욱_수시_censored.txt",
+      "total_score": 51.25,
+      "structured_score": 0.0,
+      "unstructured_score": 55.0,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 100.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 25.0
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 100.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 3,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_TOP"
+    },
+    {
+      "filename": "202311093_1학년_컴퓨터과학과_유선웅_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202311093_1학년_컴퓨터과학과_유선웅_정시_censored.txt",
+      "total_score": 43.792,
+      "structured_score": 95.0,
+      "unstructured_score": 39.16655,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 50.0,
+        "self_directed_major": 25.0,
+        "diligence_collaboration": 33.333,
+        "academic_achievement_mixed": 64.167
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 1
+      },
+      "rank": 4,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_TOP"
+    },
+    {
+      "filename": "202410723_2학년_컴퓨터과학과_이정원_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202410723_2학년_컴퓨터과학과_이정원_수시_censored.txt",
+      "total_score": 42.5,
+      "structured_score": 0.0,
+      "unstructured_score": 44.99995,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 50.0,
+        "self_directed_major": 25.0,
+        "diligence_collaboration": 62.5,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 50.0,
+        "leadership": 100.0,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 5,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_TOP"
+    },
+    {
+      "filename": "202510801_1학년_컴퓨터과학과_문서진_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510801_1학년_컴퓨터과학과_문서진_수시_censored.txt",
+      "total_score": 42.083,
+      "structured_score": 0.0,
+      "unstructured_score": 48.3333,
+      "group_scores": {
+        "academic_achievement": 83.333,
+        "academic_attitude_inquiry": 75.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 75.0,
+        "academic_achievement_mixed": 41.667
+      },
+      "category_scores": {
+        "academic_achievement": 83.33333333333334,
+        "academic_attitude": 50.0,
+        "inquiry": 100.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 50.0,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 6,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_TOP"
+    },
+    {
+      "filename": "202511293_1학년_컴퓨터과학과_주서연_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511293_1학년_컴퓨터과학과_주서연_정시_censored.txt",
+      "total_score": 41.062,
+      "structured_score": 97.5,
+      "unstructured_score": 37.500150000000005,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 79.167,
+        "academic_achievement_mixed": 73.75
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 100.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 2
+      },
+      "rank": 7,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_TOP"
+    },
+    {
+      "filename": "202111325_3학년_식품영양학과_이민재_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202111325_3학년_식품영양학과_이민재_정시_censored.txt",
+      "total_score": 40.542,
+      "structured_score": 85.0,
+      "unstructured_score": 36.666399999999996,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 33.333,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 59.167
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 1
+      },
+      "rank": 8,
+      "eligible": true,
+      "eligible_rank": 1,
+      "pass": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "202310098_3학년_생명공학과_김소연_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202310098_3학년_생명공학과_김소연_정시_censored.txt",
+      "total_score": 40.0,
+      "structured_score": 0.0,
+      "unstructured_score": 42.49995,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 50.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 66.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 9,
+      "eligible": true,
+      "eligible_rank": 2,
+      "pass": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "202315168_3컴퓨터과학과_최은서_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202315168_3컴퓨터과학과_최은서_정시_censored.txt",
+      "total_score": 39.91,
+      "structured_score": 93.25,
+      "unstructured_score": 36.66675,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 75.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 71.625
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 100.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 4
+      },
+      "rank": 10,
+      "eligible": true,
+      "eligible_rank": 3,
+      "pass": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "202510827_1학년_컴퓨터과학과_윤다인_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510827_1학년_컴퓨터과학과_윤다인_수시_censored.txt",
+      "total_score": 39.583,
+      "structured_score": 0.0,
+      "unstructured_score": 43.333200000000005,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 75.0,
+        "career_exploration": 50.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 33.333,
+        "academic_achievement_mixed": 25.0
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 100.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 11,
+      "eligible": true,
+      "eligible_rank": 4,
+      "pass": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "202510823_1_컴퓨터과학과_위아준수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510823_1_컴퓨터과학과_위아준수시_censored.txt",
+      "total_score": 39.25,
+      "structured_score": 90.0,
+      "unstructured_score": 34.99995,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 25.0,
+        "career_exploration": 50.0,
+        "self_directed_major": 25.0,
+        "diligence_collaboration": 37.5,
+        "academic_achievement_mixed": 61.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 0.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 33.33333333333333,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 1
+      },
+      "rank": 12,
+      "eligible": true,
+      "eligible_rank": 5,
+      "pass": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "202511602_1_컴퓨터과학과_최준영_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511602_1_컴퓨터과학과_최준영_정시_censored.txt",
+      "total_score": 38.967,
+      "structured_score": 64.0,
+      "unstructured_score": 36.666399999999996,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 33.333,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 48.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 3
+      },
+      "rank": 13,
+      "eligible": true,
+      "eligible_rank": 6,
+      "pass": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "202510854_1_컴퓨터과학전공_최민규_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510854_1_컴퓨터과학전공_최민규_수시_censored.txt",
+      "total_score": 38.671,
+      "structured_score": 4.5,
+      "unstructured_score": 40.8332,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 75.0,
+        "career_exploration": 33.333,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 18.917
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 100.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 1
+      },
+      "rank": 14,
+      "eligible": true,
+      "eligible_rank": 7,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202215036_4학년_경영학부_김재형_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202215036_4학년_경영학부_김재형_censored.txt",
+      "total_score": 37.994,
+      "structured_score": 67.692,
+      "unstructured_score": 39.16655,
+      "group_scores": {
+        "academic_achievement": 83.333,
+        "academic_attitude_inquiry": 33.333,
+        "career_exploration": 50.0,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 37.5,
+        "academic_achievement_mixed": 75.513
+      },
+      "category_scores": {
+        "academic_achievement": 83.33333333333334,
+        "academic_attitude": 50.0,
+        "inquiry": 16.666666666666664,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 33.33333333333333,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 39
+      },
+      "rank": 15,
+      "eligible": true,
+      "eligible_rank": 8,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202310941_1학년_컴퓨터과학과_신성빈_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202310941_1학년_컴퓨터과학과_신성빈_정시_censored.txt",
+      "total_score": 37.5,
+      "structured_score": 0.0,
+      "unstructured_score": 39.99979999999999,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 33.333,
+        "self_directed_major": 33.333,
+        "diligence_collaboration": 50.0,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 83.33333333333334,
+        "major_course_effort": 66.66666666666666,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 16,
+      "eligible": true,
+      "eligible_rank": 9,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202410215_2_컴퓨터과학과_이윤지_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202410215_2_컴퓨터과학과_이윤지_정시_censored.txt",
+      "total_score": 37.5,
+      "structured_score": 0.0,
+      "unstructured_score": 39.99995,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 50.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 17,
+      "eligible": true,
+      "eligible_rank": 10,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202410346_2_교육학과_성홍경_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202410346_2_교육학과_성홍경_정시_censored.txt",
+      "total_score": 36.667,
+      "structured_score": 0.0,
+      "unstructured_score": 39.1667,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 66.667,
+        "career_exploration": 16.667,
+        "self_directed_major": 25.0,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 83.33333333333334,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 18,
+      "eligible": true,
+      "eligible_rank": 11,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510782_1_컴퓨터과학과_김동하_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510782_1_컴퓨터과학과_김동하_수시_censored.txt",
+      "total_score": 36.667,
+      "structured_score": 0.0,
+      "unstructured_score": 39.1666,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 75.0,
+        "career_exploration": 33.333,
+        "self_directed_major": 25.0,
+        "diligence_collaboration": 29.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 100.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 33.33333333333333,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 19,
+      "eligible": true,
+      "eligible_rank": 12,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202310102_3학년_컴퓨터과학과_김유빈_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202310102_3학년_컴퓨터과학과_김유빈_수시_censored.txt",
+      "total_score": 35.833,
+      "structured_score": 0.0,
+      "unstructured_score": 38.3332,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 33.333,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 66.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 20,
+      "eligible": true,
+      "eligible_rank": 13,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511383_1학년_컴퓨터과학과_백민건_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511383_1학년_컴퓨터과학과_백민건_수시_censored.txt",
+      "total_score": 35.833,
+      "structured_score": 0.0,
+      "unstructured_score": 38.333349999999996,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 50.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 21,
+      "eligible": true,
+      "eligible_rank": 14,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511585_1_자율전공_김태훈 수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511585_1_자율전공_김태훈 수시_censored.txt",
+      "total_score": 35.458,
+      "structured_score": 95.0,
+      "unstructured_score": 35.8334,
+      "group_scores": {
+        "academic_achievement": 100.0,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 97.5
+      },
+      "category_scores": {
+        "academic_achievement": 100.0,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 1
+      },
+      "rank": 22,
+      "eligible": true,
+      "eligible_rank": 15,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202211552_3_컴퓨터과학전공_임진욱_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202211552_3_컴퓨터과학전공_임진욱_정시_censored.txt",
+      "total_score": 35.0,
+      "structured_score": 0.0,
+      "unstructured_score": 37.4998,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 33.333,
+        "self_directed_major": 25.0,
+        "diligence_collaboration": 45.833,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 23,
+      "eligible": true,
+      "eligible_rank": 16,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202315049_3학년_글로벌경영학과_정유빈_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202315049_3학년_글로벌경영학과_정유빈_수시_censored.txt",
+      "total_score": 33.333,
+      "structured_score": 0.0,
+      "unstructured_score": 35.8333,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 25.0,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 24,
+      "eligible": true,
+      "eligible_rank": 17,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510817_1학년_컴퓨터과학과_성민규_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510817_1학년_컴퓨터과학과_성민규_수시_censored.txt",
+      "total_score": 33.333,
+      "structured_score": 0.0,
+      "unstructured_score": 35.8333,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 75.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 100.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 25,
+      "eligible": true,
+      "eligible_rank": 18,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510790_1학년_컴퓨터과학과_김이준_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510790_1학년_컴퓨터과학과_김이준_수시_censored.txt",
+      "total_score": 33.0,
+      "structured_score": 90.0,
+      "unstructured_score": 30.0,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 70.0
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 1
+      },
+      "rank": 26,
+      "eligible": true,
+      "eligible_rank": 19,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202410843_2_컴퓨터과학전공_남예린_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202410843_2_컴퓨터과학전공_남예린_정시_censored.txt",
+      "total_score": 32.917,
+      "structured_score": 0.0,
+      "unstructured_score": 39.1667,
+      "group_scores": {
+        "academic_achievement": 83.333,
+        "academic_attitude_inquiry": 75.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 37.5,
+        "academic_achievement_mixed": 41.667
+      },
+      "category_scores": {
+        "academic_achievement": 83.33333333333334,
+        "academic_attitude": 50.0,
+        "inquiry": 100.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 0.0,
+        "leadership": 50.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 27,
+      "eligible": true,
+      "eligible_rank": 20,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202211062_2_지능IOT_허원_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202211062_2_지능IOT_허원_정시_censored.txt",
+      "total_score": 32.083,
+      "structured_score": 0.0,
+      "unstructured_score": 35.8332,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 75.0,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 25.0
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 100.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 16.666666666666664,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 28,
+      "eligible": true,
+      "eligible_rank": 21,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202310767_3_컴퓨터과학전공_강한별_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202310767_3_컴퓨터과학전공_강한별_수시_censored.txt",
+      "total_score": 32.079,
+      "structured_score": 5.5,
+      "unstructured_score": 34.166399999999996,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 33.333,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 45.833,
+        "academic_achievement_mixed": 19.417
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 2
+      },
+      "rank": 29,
+      "eligible": true,
+      "eligible_rank": 22,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511554_1_컴퓨터과학과_유재욱_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511554_1_컴퓨터과학과_유재욱_정시_censored.txt",
+      "total_score": 30.833,
+      "structured_score": 0.0,
+      "unstructured_score": 33.33335,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 66.667,
+        "career_exploration": 0.0,
+        "self_directed_major": 41.667,
+        "diligence_collaboration": 33.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 83.33333333333334,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 33.33333333333333,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 30,
+      "eligible": true,
+      "eligible_rank": 23,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202215073_4_컴퓨터과학과_박채빈_편입_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202215073_4_컴퓨터과학과_박채빈_편입_censored.txt",
+      "total_score": 30.712,
+      "structured_score": 87.273,
+      "unstructured_score": 26.66655,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 25.0,
+        "career_exploration": 0.0,
+        "self_directed_major": 25.0,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 60.303
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 16.666666666666664,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 100.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 50.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 44
+      },
+      "rank": 31,
+      "eligible": true,
+      "eligible_rank": 24,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202010885_3학년_컴퓨터과학과_연승혁_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202010885_3학년_컴퓨터과학과_연승혁_수시_censored.txt",
+      "total_score": 30.0,
+      "structured_score": 0.0,
+      "unstructured_score": 32.5001,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 25.0,
+        "career_exploration": 66.667,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 29.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 16.666666666666664,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 0.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 66.66666666666666
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 32,
+      "eligible": true,
+      "eligible_rank": 25,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202110903_3_컴퓨터과학과_권준성_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202110903_3_컴퓨터과학과_권준성_수시_censored.txt",
+      "total_score": 30.0,
+      "structured_score": 0.0,
+      "unstructured_score": 32.4998,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 33.333,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 45.833,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 33,
+      "eligible": true,
+      "eligible_rank": 26,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202411431_2학년_지적재산권전공_강수민_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202411431_2학년_지적재산권전공_강수민_수시_censored.txt",
+      "total_score": 30.0,
+      "structured_score": 0.0,
+      "unstructured_score": 32.4998,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 33.333,
+        "career_exploration": 33.333,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 16.666666666666664,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 3
+      },
+      "rank": 34,
+      "eligible": true,
+      "eligible_rank": 27,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510855_1학년_컴퓨터과학과_최현준_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510855_1학년_컴퓨터과학과_최현준_수시_censored.txt",
+      "total_score": 30.0,
+      "structured_score": 0.0,
+      "unstructured_score": 32.4999,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 35,
+      "eligible": true,
+      "eligible_rank": 28,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "201611091_4학년_컴퓨터과학과_이동재_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\201611091_4학년_컴퓨터과학과_이동재_정시_censored.txt",
+      "total_score": 29.612,
+      "structured_score": 72.604,
+      "unstructured_score": 26.66675,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 16.667,
+        "career_exploration": 50.0,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 29.167,
+        "academic_achievement_mixed": 52.969
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 0.0,
+        "collaboration_communication": 16.666666666666664,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 33.33333333333333,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 48
+      },
+      "rank": 36,
+      "eligible": true,
+      "eligible_rank": 29,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510806_1학년_컴퓨터과학과_박시연_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510806_1학년_컴퓨터과학과_박시연_정시_censored.txt",
+      "total_score": 29.167,
+      "structured_score": 0.0,
+      "unstructured_score": 31.66655,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 66.667,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 83.33333333333334,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 37,
+      "eligible": true,
+      "eligible_rank": 30,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510837_1_컴퓨터과학과_이정민_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510837_1_컴퓨터과학과_이정민_정시_censored.txt",
+      "total_score": 29.167,
+      "structured_score": 0.0,
+      "unstructured_score": 31.6667,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 38,
+      "eligible": true,
+      "eligible_rank": 31,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511407_1학년_컴퓨터과학과_주남영_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511407_1학년_컴퓨터과학과_주남영_수시_censored.txt",
+      "total_score": 29.167,
+      "structured_score": 0.0,
+      "unstructured_score": 31.6666,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 33.333,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 39,
+      "eligible": true,
+      "eligible_rank": 32,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "201910689_4학년_글로벌경영학과_손민수_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\201910689_4학년_글로벌경영학과_손민수_정시_censored.txt",
+      "total_score": 27.583,
+      "structured_score": 90.0,
+      "unstructured_score": 23.333199999999998,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 16.667,
+        "career_exploration": 33.333,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 25.0,
+        "academic_achievement_mixed": 61.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 0.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 33.33333333333333,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 0.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 2
+      },
+      "rank": 40,
+      "eligible": true,
+      "eligible_rank": 33,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202110970_3_컴퓨터과학전공_이태훈_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202110970_3_컴퓨터과학전공_이태훈_정시_censored.txt",
+      "total_score": 27.5,
+      "structured_score": 0.0,
+      "unstructured_score": 30.0001,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 41,
+      "eligible": true,
+      "eligible_rank": 34,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202410891_2학년_컴퓨터과학과_장윤하_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202410891_2학년_컴퓨터과학과_장윤하_수시_censored.txt",
+      "total_score": 27.5,
+      "structured_score": 0.0,
+      "unstructured_score": 29.99995,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 66.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 100.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 42,
+      "eligible": true,
+      "eligible_rank": 35,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510839_1학년_컴퓨터과학과_이준성_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510839_1학년_컴퓨터과학과_이준성_수시_censored.txt",
+      "total_score": 27.5,
+      "structured_score": 0.0,
+      "unstructured_score": 35.0,
+      "group_scores": {
+        "academic_achievement": 100.0,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 50.0
+      },
+      "category_scores": {
+        "academic_achievement": 100.0,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 33.33333333333333,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 16.666666666666664,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 43,
+      "eligible": true,
+      "eligible_rank": 36,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511596_1_ 컴퓨터과학과_송동준_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511596_1_ 컴퓨터과학과_송동준_정시_censored.txt",
+      "total_score": 27.5,
+      "structured_score": 0.0,
+      "unstructured_score": 29.999899999999997,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 45.833,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 44,
+      "eligible": true,
+      "eligible_rank": 37,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511654_1_컴퓨터과학과_이주환_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511654_1_컴퓨터과학과_이주환_정시_censored.txt",
+      "total_score": 27.083,
+      "structured_score": 0.0,
+      "unstructured_score": 33.3333,
+      "group_scores": {
+        "academic_achievement": 83.333,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 33.333,
+        "academic_achievement_mixed": 41.667
+      },
+      "category_scores": {
+        "academic_achievement": 83.33333333333334,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 45,
+      "eligible": true,
+      "eligible_rank": 38,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202315060_3학년_휴먼AI공학전공_서현승_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202315060_3학년_휴먼AI공학전공_서현승_정시_censored.txt",
+      "total_score": 26.667,
+      "structured_score": 0.0,
+      "unstructured_score": 29.1667,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 46,
+      "eligible": true,
+      "eligible_rank": 39,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202410822_2학년_컴퓨터과학과_김건규_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202410822_2학년_컴퓨터과학과_김건규_정시_censored.txt",
+      "total_score": 26.667,
+      "structured_score": 0.0,
+      "unstructured_score": 29.1667,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 50.0,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 83.33333333333334,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 47,
+      "eligible": true,
+      "eligible_rank": 40,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510843_1_컴퓨터과학전공_임희철_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510843_1_컴퓨터과학전공_임희철_수시_censored.txt",
+      "total_score": 26.25,
+      "structured_score": 0.0,
+      "unstructured_score": 30.00015,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 25.0
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 48,
+      "eligible": true,
+      "eligible_rank": 41,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202210915_3_컴퓨터과학과_김희건_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202210915_3_컴퓨터과학과_김희건_수시_censored.txt",
+      "total_score": 25.308,
+      "structured_score": 93.0,
+      "unstructured_score": 20.83315,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 33.333,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 37.5,
+        "academic_achievement_mixed": 63.167
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 16.666666666666664,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 33.33333333333333,
+        "diligence_rules": 0.0,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 1
+      },
+      "rank": 49,
+      "eligible": true,
+      "eligible_rank": 42,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202110937_3학년_컴퓨터과학과_서형완_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202110937_3학년_컴퓨터과학과_서형완_수시_censored.txt",
+      "total_score": 25.0,
+      "structured_score": 0.0,
+      "unstructured_score": 27.499950000000002,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 8.333,
+        "career_exploration": 50.0,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 0.0,
+        "inquiry": 16.666666666666664,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 50.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 50,
+      "eligible": true,
+      "eligible_rank": 43,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202110975_3_컴퓨터과학전공_정인철_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202110975_3_컴퓨터과학전공_정인철_수시_censored.txt",
+      "total_score": 25.0,
+      "structured_score": 0.0,
+      "unstructured_score": 27.49995,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 51,
+      "eligible": true,
+      "eligible_rank": 44,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202210931_1학년_컴퓨터과학과_손현석_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202210931_1학년_컴퓨터과학과_손현석_정시_censored.txt",
+      "total_score": 25.0,
+      "structured_score": 0.0,
+      "unstructured_score": 27.499899999999997,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 33.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 52,
+      "eligible": true,
+      "eligible_rank": 45,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510824_1학년_컴퓨터과학과_유다연_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510824_1학년_컴퓨터과학과_유다연_정시_censored.txt",
+      "total_score": 25.0,
+      "structured_score": 0.0,
+      "unstructured_score": 27.5001,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 53,
+      "eligible": true,
+      "eligible_rank": 46,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510845_1학년_컴퓨터과학과_장효석_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510845_1학년_컴퓨터과학과_장효석_수시_censored.txt",
+      "total_score": 25.0,
+      "structured_score": 0.0,
+      "unstructured_score": 27.499899999999997,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 33.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 54,
+      "eligible": true,
+      "eligible_rank": 47,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510847_1학년_컴퓨터과학과_정윤성_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510847_1학년_컴퓨터과학과_정윤성_수시_censored.txt",
+      "total_score": 25.0,
+      "structured_score": 0.0,
+      "unstructured_score": 27.5001,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 55,
+      "eligible": true,
+      "eligible_rank": 48,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511468_1학년_컴퓨터과학과_이은서_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511468_1학년_컴퓨터과학과_이은서_정시_censored.txt",
+      "total_score": 24.583,
+      "structured_score": 0.0,
+      "unstructured_score": 28.3334,
+      "group_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 25.0
+      },
+      "category_scores": {
+        "academic_achievement": 50.0,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 56,
+      "eligible": true,
+      "eligible_rank": 49,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202210903_2_컴퓨터과학과_김용준_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202210903_2_컴퓨터과학과_김용준_정시_censored.txt",
+      "total_score": 24.167,
+      "structured_score": 0.0,
+      "unstructured_score": 24.16665,
+      "group_scores": {
+        "academic_achievement": 0.0,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 33.333,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 29.167,
+        "academic_achievement_mixed": 0.0
+      },
+      "category_scores": {
+        "academic_achievement": 0.0,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 33.33333333333333,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 33.33333333333333
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 57,
+      "eligible": true,
+      "eligible_rank": 50,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511550_1_컴퓨터과학과_박지수_정시.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511550_1_컴퓨터과학과_박지수_정시.txt",
+      "total_score": 24.167,
+      "structured_score": 0.0,
+      "unstructured_score": 26.66655,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 58.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 58,
+      "eligible": true,
+      "eligible_rank": 51,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202211047_2_컴퓨터과확전공_이수빈_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202211047_2_컴퓨터과확전공_이수빈_정시_censored.txt",
+      "total_score": 22.5,
+      "structured_score": 0.0,
+      "unstructured_score": 25.0001,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 50.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 29.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 0.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 59,
+      "eligible": true,
+      "eligible_rank": 52,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202510808_1학년_컴퓨터과학과_박유우_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510808_1학년_컴퓨터과학과_박유우_수시_censored.txt",
+      "total_score": 21.667,
+      "structured_score": 0.0,
+      "unstructured_score": 24.1667,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 25.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 16.666666666666664,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 60,
+      "eligible": true,
+      "eligible_rank": 53,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202210133_3_컴퓨터과학전공_이채원_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202210133_3_컴퓨터과학전공_이채원_정시_censored.txt",
+      "total_score": 20.358,
+      "structured_score": 93.667,
+      "unstructured_score": 13.333400000000001,
+      "group_scores": {
+        "academic_achievement": 0.0,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 0.0,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 25.0,
+        "academic_achievement_mixed": 46.833
+      },
+      "category_scores": {
+        "academic_achievement": 0.0,
+        "academic_attitude": 50.0,
+        "inquiry": 33.33333333333333,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 33.33333333333333,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 0.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 3
+      },
+      "rank": 61,
+      "eligible": true,
+      "eligible_rank": 54,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511355_1학년_컴퓨터과학과_정지승_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511355_1학년_컴퓨터과학과_정지승_정시_censored.txt",
+      "total_score": 20.0,
+      "structured_score": 0.0,
+      "unstructured_score": 22.49995,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 41.667,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 37.5,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 33.33333333333333,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 62,
+      "eligible": true,
+      "eligible_rank": 55,
+      "pass": false,
+      "status": "FAIL"
+    },
+    {
+      "filename": "202511389_1학년_컴퓨터과학과_양석현_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511389_1학년_컴퓨터과학과_양석현_수시_censored.txt",
+      "total_score": 20.0,
+      "structured_score": 0.0,
+      "unstructured_score": 22.49995,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 33.333,
+        "career_exploration": 0.0,
+        "self_directed_major": 16.667,
+        "diligence_collaboration": 37.5,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 16.666666666666664,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 16.666666666666664,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 66.66666666666666,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 16.666666666666664,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 63,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_BOTTOM"
+    },
+    {
+      "filename": "202511391_1학년_자유전공(it계열)_윤성재_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202511391_1학년_자유전공(it계열)_윤성재_수시_censored.txt",
+      "total_score": 19.167,
+      "structured_score": 0.0,
+      "unstructured_score": 21.66655,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 25.0,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 50.0,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 0.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 50.0,
+        "leadership": 50.0,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 64,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_BOTTOM"
+    },
+    {
+      "filename": "201910936_3_컴퓨터과학과_김연수_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\201910936_3_컴퓨터과학과_김연수_정시_censored.txt",
+      "total_score": 18.333,
+      "structured_score": 0.0,
+      "unstructured_score": 20.83335,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 25.0,
+        "career_exploration": 0.0,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 54.167,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 0.0,
+        "inquiry": 50.0,
+        "collaboration_communication": 100.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 65,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_BOTTOM"
+    },
+    {
+      "filename": "202211046_4_지능IoT융합_이서진_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202211046_4_지능IoT융합_이서진_수시_censored.txt",
+      "total_score": 17.5,
+      "structured_score": 0.0,
+      "unstructured_score": 19.99995,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 33.333,
+        "career_exploration": 0.0,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 41.667,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 50.0,
+        "inquiry": 16.666666666666664,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 50.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 66,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_BOTTOM"
+    },
+    {
+      "filename": "202215075_4학년_컴퓨터과학과_윤용선_편입_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202215075_4학년_컴퓨터과학과_윤용선_편입_censored.txt",
+      "total_score": 17.33,
+      "structured_score": 19.955,
+      "unstructured_score": 15.83335,
+      "group_scores": {
+        "academic_achievement": 0.0,
+        "academic_attitude_inquiry": 25.0,
+        "career_exploration": 16.667,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 33.333,
+        "academic_achievement_mixed": 9.977
+      },
+      "category_scores": {
+        "academic_achievement": 0.0,
+        "academic_attitude": 33.33333333333333,
+        "inquiry": 16.666666666666664,
+        "collaboration_communication": 50.0,
+        "sharing_caring": 50.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 16.666666666666664
+      },
+      "debug": {
+        "structured_rows_found": 55
+      },
+      "rank": 67,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_BOTTOM"
+    },
+    {
+      "filename": "202410821_2_컴퓨터과학전공_권서윤_정시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202410821_2_컴퓨터과학전공_권서윤_정시_censored.txt",
+      "total_score": 8.333,
+      "structured_score": 0.0,
+      "unstructured_score": 10.83315,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 8.333,
+        "career_exploration": 0.0,
+        "self_directed_major": 8.333,
+        "diligence_collaboration": 12.5,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 0.0,
+        "inquiry": 16.666666666666664,
+        "collaboration_communication": 16.666666666666664,
+        "sharing_caring": 0.0,
+        "diligence_rules": 16.666666666666664,
+        "leadership": 16.666666666666664,
+        "major_course_effort": 16.666666666666664,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 68,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_BOTTOM"
+    },
+    {
+      "filename": "202510818_1학년_컴퓨터과학과_성현재_수시_censored.txt",
+      "path": "C:\\Users\\dktm9\\OneDrive\\바탕 화면\\censored_txt\\202510818_1학년_컴퓨터과학과_성현재_수시_censored.txt",
+      "total_score": 4.167,
+      "structured_score": 0.0,
+      "unstructured_score": 6.666549999999999,
+      "group_scores": {
+        "academic_achievement": 33.333,
+        "academic_attitude_inquiry": 0.0,
+        "career_exploration": 0.0,
+        "self_directed_major": 0.0,
+        "diligence_collaboration": 8.333,
+        "academic_achievement_mixed": 16.667
+      },
+      "category_scores": {
+        "academic_achievement": 33.33333333333333,
+        "academic_attitude": 0.0,
+        "inquiry": 0.0,
+        "collaboration_communication": 0.0,
+        "sharing_caring": 33.33333333333333,
+        "diligence_rules": 0.0,
+        "leadership": 0.0,
+        "major_course_effort": 0.0,
+        "major_course_achievement": 0.0,
+        "career_exploration": 0.0
+      },
+      "debug": {
+        "structured_rows_found": 0
+      },
+      "rank": 69,
+      "eligible": false,
+      "eligible_rank": null,
+      "pass": false,
+      "status": "TRIMMED_BOTTOM"
+    }
+  ]
+}
