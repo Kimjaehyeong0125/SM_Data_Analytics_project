@@ -1,0 +1,28 @@
+grade_points:
+  default:
+    1: 100
+    2: 95
+    3: 90
+    4: 85
+    5: 80
+    6: 70
+    7: 60
+    8: 50
+    9: 40
+
+# Optional: by graduation year
+# year_overrides:
+#   2025:
+#     1: 100
+#     2: 95
+
+attendance_penalty:
+  # The structured scoring subtracts:
+  #   (absence * absence_penalty)
+  # + (tardy * tardy_penalty)
+  # + (early_leave * early_leave_penalty)
+  # + (etc * etc_penalty)
+  absence: 1.0
+  tardy: 0.5
+  early_leave: 0.5
+  etc: 0.25

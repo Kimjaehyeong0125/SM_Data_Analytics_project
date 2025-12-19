@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>수뭉이 합격률 분석 - 선택 페이지</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f5f7fb; --card:#ffffff; --accent:#4b7bec; --accent-2:#6c8bff;
+      --text:#1f2937; --muted:#6b7280;
+      --panel-border:#d6e6ff;
+      --shadow:0 14px 34px rgba(31,41,55,.10);
+      --shadow-soft:0 8px 22px rgba(31,41,55,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Pretendard',-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:
+        radial-gradient(900px 500px at 85% -10%, #e6eeff 0%, #f4f7ff 55%, var(--bg) 100%),
+        linear-gradient(180deg,#ffffff 0%, #f7f9ff 100%);
+      color:var(--text);
+      padding-bottom:100px;
+    }
+    .blob{
+      position:fixed; inset:auto -120px auto auto; top:60px; width:380px; height:380px;
+      filter:blur(60px); opacity:.35; pointer-events:none; border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, #c7d3ff 0%, #e9efff 60%, transparent 70%);
+    }
+    .container{max-width:1080px; margin:0 auto; padding:28px 20px 64px}
+
+    /* Hero */
+    .hero{
+      position:relative;
+      background:linear-gradient(135deg, var(--accent), var(--accent-2));
+      color:#fff; border-radius:34px;
+      padding:28px 28px;
+      box-shadow:var(--shadow);
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      overflow:hidden;
+      border:2px solid rgba(255,255,255,.18);
+    }
+    .hero::after{
+      content:""; position:absolute; right:-60px; top:-60px; width:240px; height:240px; border-radius:50%;
+      background:radial-gradient(circle at 30% 30%, #a8b7ff 0%, transparent 70%);
+      opacity:.45;
+    }
+    .hero h1{margin:0; font-size:28px; font-weight:800; letter-spacing:.3px}
+    .hero p{margin:6px 0 0; opacity:.95}
+
+    /* Panel 공통 */
+    .panel{
+      margin:34px auto 0;
+      background:var(--card);
+      border-radius:26px;
+      box-shadow:var(--shadow-soft);
+      border:2px solid var(--panel-border);
+      padding:26px;
+      position:relative;
+    }
+    .panel h2{margin:0 0 6px; font-size:22px}
+    .panel p.desc{margin:0 0 18px; color:var(--muted)}
+
+    /* 옵션 카드 */
+    .option-grid{display:grid; grid-template-columns:1fr; gap:14px}
+    @media(min-width:720px){ .option-grid{grid-template-columns:1fr 1fr} }
+    .option{
+      position:relative;
+      border:2px solid var(--panel-border);
+      border-radius:18px;
+      padding:18px;
+      background:#fff;
+      cursor:pointer;
+      transition:.2s ease;
+      display:flex; align-items:center; gap:12px;
+    }
+    .option:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 26px rgba(59,85,190,.10);
+    }
+    .option input{position:absolute; inset:0; opacity:0; pointer-events:none}
+    .option .dot{
+      width:18px; height:18px; border-radius:999px; border:2px solid var(--muted);
+      display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto;
+      transition:.2s ease;
+      background:#fff;
+    }
+    .option .dot::after{
+      content:''; width:10px; height:10px; border-radius:999px; background:transparent; transition:.2s ease;
+    }
+    .option .title{font-weight:700}
+    .option .sub{font-size:12px; color:var(--muted); margin-top:2px}
+    .option.selected{
+      border-color:#b8cbff;
+      background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%);
+    }
+    .option.selected .dot{border-color:var(--accent)}
+    .option.selected .dot::after{background:var(--accent)}
+
+    /* 학과 칩 */
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:6px}
+    .chip{
+      border:2px solid #b8cbff;
+      background:linear-gradient(180deg,#c7d5ff 0%, #a9bcff 100%);
+      color:#fff;
+      padding:10px 16px;
+      border-radius:999px;
+      font-weight:700;
+      cursor:pointer;
+      transition:.15s ease;
+      box-shadow:0 8px 18px rgba(77,110,207,.22);
+    }
+    .chip:hover{
+      filter:brightness(1.02);
+      transform:translateY(-1px);
+    }
+    .chip.active{
+      background:linear-gradient(180deg,#a8bbff 0%, #92a9ff 100%);
+      border-color:#96aaff;
+    }
+
+    /* footer actions */
+    .actions{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:22px}
+    .hint{color:var(--muted); font-size:13px}
+
+    .btn{
+      appearance:none;
+      border:1.8px solid #cfe0ff;
+      border-radius:16px;
+      padding:14px 18px;
+      font-weight:800;
+      letter-spacing:.2px;
+      background:linear-gradient(135deg, #b7c8ff, #93a8ff);
+      color:#fff;
+      box-shadow:0 14px 28px rgba(133,152,255,.35);
+      cursor:pointer;
+      transition:.18s ease;
+      min-width:220px;
+    }
+    .btn:hover{transform:translateY(-1px);}
+    .btn:disabled{opacity:.45; cursor:not-allowed; transform:none; box-shadow:none}
+
+    /* 수뭉이 이미지 */
+    .sumung{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      width:120px;
+      pointer-events:none;
+    }
+
+    @media (max-width:620px){
+      .hero{flex-direction:column; align-items:flex-start;}
+      .actions{flex-direction:column; align-items:flex-start;}
+      .sumung{display:none;}
+    }
+  </style>
+</head>
+<body>
+  <div class="blob" aria-hidden="true"></div>
+
+  <div class="container">
+    <!-- 헤더 -->
+    <section class="hero" aria-label="페이지 헤더">
+      <div>
+        <h1>수뭉이 합격률 분석</h1>
+        <p>입력된 <b>생활기록부</b>를 바탕으로 학과별 합격률 리포트를 만들어드릴게요.</p>
+      </div>
+    </section>
+
+    <!-- 1) 데이터 입력 방식 선택 -->
+    <section class="panel" aria-labelledby="dataLabel">
+      <h2 id="dataLabel">무엇을 하실까요?</h2>
+      <p class="desc">아래에서 시작 작업을 선택하세요.</p>
+      <div class="option-grid" id="modeGroup">
+        <label class="option" data-value="existing">
+          <input type="radio" name="mode" value="existing" />
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <div class="title">이미 넣어둔 데이터가 있어요</div>
+            <div class="sub">저장된 생기부 데이터를 불러와 분석합니다.</div>
+          </div>
+        </label>
+
+        <label class="option" data-value="new">
+          <input type="radio" name="mode" value="new" />
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <div class="title">새 데이터를 추가할게요</div>
+            <div class="sub">새로운 생기부를 입력/업로드하고 분석합니다.</div>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <!-- 2) 희망 학과 선택 -->
+    <section class="panel" aria-labelledby="collegeLabel">
+      <h2 id="collegeLabel">희망 학과를 선택해주세요</h2>
+      <p class="desc">학과에 따라 분석 항목 가중치가 달라집니다.</p>
+      <div class="chips" id="collegeChips" role="radiogroup" aria-label="희망 학과">
+        <button class="chip" type="button" data-college="인문사회과학" role="radio" aria-checked="false">인문사회과학</button>
+        <button class="chip" type="button" data-college="융공대" role="radio" aria-checked="false">융공대</button>
+        <button class="chip" type="button" data-college="경경대" role="radio" aria-checked="false">경경대</button>
+        <button class="chip" type="button" data-college="사범대" role="radio" aria-checked="false">사범대</button>
+        <button class="chip" type="button" data-college="예체능" role="radio" aria-checked="false">예체능</button>
+      </div>
+
+      <div class="actions">
+        <span class="hint" id="hintText">데이터 모드와 희망 학과를 선택하면 다음 단계로 이동할 수 있어요.</span>
+        <button id="goBtn" class="btn" disabled>이제 합격을 확인할게요</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- 수뭉이 이미지 -->
+  <img src="dataproject/Sumung1.png" alt="수뭉이" class="sumung" />
+
+  <script>
+    let selectedMode = null;
+    let selectedCollege = null;
+
+    const $ = (sel, root=document) => root.querySelector(sel);
+    const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+    const modeGroup = $('#modeGroup');
+    const goBtn = $('#goBtn');
+    const hint = $('#hintText');
+    const chipGroup = $('#collegeChips');
+
+    $$('.option', modeGroup).forEach(card=>{
+      card.addEventListener('click', ()=>{
+        $$('.option', modeGroup).forEach(c=>c.classList.remove('selected'));
+        card.classList.add('selected');
+        selectedMode = card.dataset.value;
+        updateCTA();
+      });
+    });
+
+    $$('.chip', chipGroup).forEach(chip=>{
+      chip.addEventListener('click', ()=>{
+        $$('.chip', chipGroup).forEach(c=>{
+          c.classList.remove('active');
+          c.setAttribute('aria-checked','false');
+        });
+        chip.classList.add('active');
+        chip.setAttribute('aria-checked','true');
+        selectedCollege = chip.dataset.college;
+        updateCTA();
+      });
+    });
+
+    function updateCTA(){
+      const ready = !!(selectedMode && selectedCollege);
+      goBtn.disabled = !ready;
+      hint.textContent = ready
+        ? `선택됨 · 데이터: ${selectedMode==='existing'?'기존 데이터':'새 데이터'}, 학과: ${selectedCollege}`
+        : '데이터 모드와 희망 학과를 선택하면 다음 단계로 이동할 수 있어요.';
+    }
+
+    goBtn.addEventListener('click', ()=>{
+      if(!selectedMode || !selectedCollege) return;
+      const params = new URLSearchParams({ mode:selectedMode, college:selectedCollege });
+      // Flask static에서 report.html 제공
+      window.location.href = `report.html?${params.toString()}`;
+    });
+
+    chipGroup.addEventListener('keydown', (e)=>{
+      const chips = $$('.chip', chipGroup);
+      const idx = chips.findIndex(c=>c.classList.contains('active'));
+      if(['ArrowRight','ArrowDown'].includes(e.key)){
+        e.preventDefault();
+        const n = chips[(idx+1) % chips.length];
+        n.click(); n.focus();
+      }else if(['ArrowLeft','ArrowUp'].includes(e.key)){
+        e.preventDefault();
+        const p = chips[(idx-1+chips.length) % chips.length];
+        p.click(); p.focus();
+      }
+    });
+  </script>
+</body>
+</html>

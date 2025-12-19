@@ -1,0 +1,42 @@
+version: 1
+
+# 10개 항목 → 5개 그룹 (총점 100점)
+# 학업 성취도 그룹은 (정형 50% + 비정형 50%) 혼합 점수를 사용
+
+structured_unstructured_mix:
+  academic_achievement:
+    structured: 0.5
+    unstructured: 0.5
+
+weights:
+  academic_achievement: 0.15
+  academic_attitude_inquiry: 0.20
+  career_exploration: 0.25
+  self_directed_major: 0.20
+  diligence_collaboration: 0.20
+
+groups:
+  academic_achievement:
+    categories: [academic_achievement]
+  academic_attitude_inquiry:
+    categories: [academic_attitude, inquiry]
+  career_exploration:
+    categories: [career_exploration]
+  self_directed_major:
+    categories: [major_course_effort, major_course_achievement]
+  diligence_collaboration:
+    categories: [collaboration_communication, sharing_caring, diligence_rules, leadership]
+
+scoring:
+  # 레벨별 점수(중복 없이 존재 여부 기반으로 합산)
+  # low=1, mid=2, high=3 → 최대 6점
+  level_points:
+    low: 1
+    mid: 2
+    high: 3
+
+  # 키워드 나열(파이프(|) 등)로 보이는 라인은 매칭 제외 (규칙 완화/강화 가능)
+  list_like_line:
+    enabled: true
+    min_separators: 6
+    separators: ["|", "·", "•", ",", "／", "/"]

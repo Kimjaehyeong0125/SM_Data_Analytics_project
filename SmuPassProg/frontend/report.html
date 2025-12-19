@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>수뭉이 합격률 분석 - 리포트</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#4b7bec;
+      --accent-2:#6c8bff;
+      --accent-soft:#eef3ff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --danger:#f43f5e;
+      --success:#10b981;
+      --shadow-soft:0 10px 24px rgba(31,41,55,.05);
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:var(--bg);
+      font-family:'Pretendard',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      color:var(--text);
+      position:relative;
+      min-height:100vh;
+      padding-bottom:100px;
+    }
+    .wrap{
+      max-width:1150px;
+      margin:0 auto;
+      padding:26px 20px 70px;
+    }
+
+    /* 파란 히어로 배너 */
+    .hero{
+      background:linear-gradient(90deg, #4e7ef0 0%, #6689ff 45%, #87a2ff 85%);
+      border-radius:32px;
+      padding:26px 30px 26px;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      box-shadow:0 16px 35px rgba(75,123,236,.35);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      top:-40px;
+      right:-70px;
+      width:200px;
+      height:200px;
+      border-radius:999px;
+      background:rgba(255,255,255,.15);
+      filter:blur(2px);
+    }
+    .hero-title{
+      font-size:1.35rem;
+      font-weight:700;
+      margin-bottom:6px;
+      letter-spacing:-.02em;
+    }
+    .hero-desc{
+      font-size:.85rem;
+      opacity:.92;
+    }
+
+    /* 상단 카드들 */
+    .top-grid{
+      margin-top:22px;
+      display:grid;
+      grid-template-columns: repeat(5, minmax(155px,1fr));
+      gap:16px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:18px;
+      box-shadow:var(--shadow-soft);
+    }
+    .metric-card{
+      padding:16px 16px 14px;
+      display:flex;
+      flex-direction:column;
+      gap:7px;
+      background:#edf4ff;
+      border:2px solid #c7dafe;
+    }
+    .metric-label{
+      font-size:.75rem;
+      color:var(--muted);
+    }
+    .metric-value{
+      font-size:1.35rem;
+      font-weight:700;
+    }
+    .metric-sub{
+      font-size:.7rem;
+      color:var(--muted);
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:4px;
+      background:var(--accent-soft);
+      color:var(--accent);
+      font-size:.65rem;
+      border-radius:999px;
+      padding:3px 10px;
+      font-weight:600;
+    }
+
+    /* 메인 2열 */
+    .main-grid{
+      margin-top:20px;
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:20px;
+      align-items:flex-start;
+    }
+
+    /* 10개 항목 카드 */
+    .chart-card{
+      padding:18px 18px 16px;
+      background:var(--card);
+      border:2px solid #d6e6ff;
+      border-radius:18px;
+    }
+    .section-title{
+      font-weight:600;
+      font-size:.92rem;
+      margin-bottom:6px;
+    }
+    .section-caption{
+      font-size:.72rem;
+      color:var(--muted);
+      margin-bottom:14px;
+    }
+    .bar-list{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .bar-row{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .bar-meta{
+      width:195px;
+    }
+    .bar-title{
+      font-size:.74rem;
+      font-weight:500;
+      color:var(--text);
+      letter-spacing:-.01em;
+    }
+    .bar-sub{
+      font-size:.65rem;
+      color:var(--muted);
+    }
+    .bar-track{
+      flex:1;
+      background:#edf0f7;
+      height:18px;
+      border-radius:999px;
+      overflow:hidden;
+      position:relative;
+    }
+    .bar-fill{
+      background:linear-gradient(90deg, #4b7bec 0%, #2f63d5 90%);
+      width:0;
+      height:100%;
+      border-radius:999px;
+      transition:width .6s ease;
+    }
+    .bar-val{
+      width:50px;
+      font-size:.7rem;
+      text-align:right;
+      color:var(--text);
+      font-weight:600;
+    }
+
+    /* 오른쪽 카드 */
+    .right-card{
+      padding:16px 16px 16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      background:var(--card);
+      border:2px solid #ffc7d7;
+      border-radius:18px;
+      box-shadow:var(--shadow-soft);
+    }
+    .summary-box{
+      background:#f3f6ff;
+      border:2px solid rgba(90,118,228,.2);
+      border-radius:14px;
+      padding:10px 12px 10px;
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+    }
+    .summary-title{
+      font-size:.7rem;
+      color:var(--muted);
+    }
+
+    /* 합격 가능성 바 */
+    .likelihood-track{
+      width:100%;
+      height:38px;
+      background:linear-gradient(90deg, #ffe0e5 0%, #fef9c3 40%, #d1f6df 100%);
+      border-radius:999px;
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(238,240,248,.8);
+    }
+    .likelihood-labels{
+      display:flex;
+      justify-content:space-between;
+      margin-top:6px;
+      font-size:.64rem;
+      color:var(--muted);
+    }
+    .likelihood-pointer{
+      --pos:52%;
+      position:absolute;
+      top:-6px;
+      left:var(--pos);
+      translate:-50%;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:2px;
+    }
+    .likelihood-pointer span{
+      background:var(--card);
+      border:1px solid rgba(0,0,0,.04);
+      border-radius:999px;
+      padding:2px 5px;
+      font-size:.6rem;
+      box-shadow:0 8px 20px rgba(31,41,55,.12);
+    }
+    .likelihood-pointer i{
+      display:block;
+      width:2px;
+      height:14px;
+      background:#1f2937;
+      border-radius:999px;
+    }
+
+    /* 점수 분포 박스 */
+    .dist-box{
+      background:var(--card);
+      border-radius:18px;
+      border:2px solid rgba(240,242,248,.65);
+      padding:14px 14px 12px;
+      box-shadow:var(--shadow-soft);
+    }
+    .dist-track{
+      width:100%;
+      height:48px;
+      background: #f1f2f7;
+      border-radius:16px;
+      display:grid;
+      grid-template-columns:repeat(5, 1fr);
+      overflow:hidden;
+      margin-top:8px;
+    }
+    .dist-track span{
+      border-right:1px solid rgba(255,255,255,.8);
+      position:relative;
+    }
+    .dist-track span:last-child{border-right:0;}
+    .dist-pointer{
+      position:relative;
+      top:-52px;
+      height:52px;
+      width:0;
+      border-left:2.5px solid #ef4444;
+      translate:-50%;
+    }
+    .dist-caption{
+      font-size:.63rem;
+      color:var(--muted);
+      margin-top:5px;
+    }
+
+    /* footer */
+    footer{
+      position:fixed;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:transparent;
+      text-align:center;
+      padding:14px 0 18px;
+      font-size:.7rem;
+      color:#8b9199;
+    }
+
+    /* 오른쪽 아래 수뭉이 이미지 */
+    .sumung-img{
+      position:fixed;
+      right:20px;
+      bottom:55px;
+      width:120px;
+      pointer-events:none;
+    }
+
+    @media (max-width:1080px){
+      .top-grid{grid-template-columns: repeat(auto-fit, minmax(155px,1fr));}
+      .main-grid{grid-template-columns:1fr;}
+    }
+    @media (max-width:620px){
+      .bar-row{flex-wrap:wrap;}
+      .bar-meta{width:100%;}
+      .hero{flex-direction:column; align-items:flex-start;}
+      .sumung-img{display:none;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- 파란 배너 -->
+    <div class="hero">
+      <div>
+        <div class="hero-title">수뭉이 합격률 분석</div>
+        <div class="hero-desc">입력된 생활기록부를 바탕으로 학과별 합격률 리포트를 만들어드릴게요.</div>
+      </div>
+    </div>
+
+    <!-- 상단 요약 카드 5개 -->
+    <section class="top-grid">
+      <div class="card metric-card" id="totalscore-card">
+        <div class="metric-label">전체 점수</div>
+        <div class="metric-value" id="totalScore">0점</div>
+        <div class="metric-sub">10개 항목 합산</div>
+      </div>
+      <div class="card metric-card">
+        <div class="metric-label">합격점(커트라인)</div>
+        <div class="metric-value" id="cutline">-</div>
+        <div class="metric-sub">동일 계열 최근 합격자 평균</div>
+      </div>
+      <div class="card metric-card" id="result-card">
+        <div class="metric-label">합격 예측 결과</div>
+        <div class="metric-value" id="passResult">-</div>
+        <div class="metric-sub" id="passDelta">기준보다 0점</div>
+      </div>
+      <div class="card metric-card">
+        <div class="metric-label">순위</div>
+        <div class="metric-value" id="rank">-</div>
+        <div class="metric-sub" id="rankDetail">지원자 중</div>
+      </div>
+      <div class="card metric-card">
+        <div class="metric-label">합격 가능성</div>
+        <span class="badge" id="tendency-badge">-</span>
+        <div class="metric-sub">상향 / 적정 / 하향</div>
+      </div>
+    </section>
+
+    <!-- 본문 2열 -->
+    <section class="main-grid">
+      <!-- 왼쪽: 10개 항목 점수 -->
+      <div class="card chart-card">
+        <div class="section-title">10개 항목 점수</div>
+        <div class="section-caption">학업역량 · 진로역량 · 공동체역량으로 구분해서 조회합니다.</div>
+        <div class="bar-list" id="barList"></div>
+      </div>
+
+      <!-- 오른쪽: 합격 가능성, 분포 -->
+      <div class="right-card">
+        <div>
+          <div class="section-title">합격 가능성</div>
+          <div class="section-caption">내 점수가 어느 구간에 있는지 확인하세요.</div>
+          <div class="likelihood-track" id="likelihoodTrack">
+            <div class="likelihood-pointer" id="likelihoodPointer">
+              <span id="likeText">적정</span>
+              <i></i>
+            </div>
+          </div>
+          <div class="likelihood-labels">
+            <span>하향 지원</span>
+            <span>적정 지원</span>
+            <span>상향 가능</span>
+          </div>
+        </div>
+
+        <div class="dist-box">
+          <div class="section-title" style="margin-bottom:0;">지원자 점수 분포 중 내 위치</div>
+          <div class="dist-track">
+            <span style="background:#e8edf7;"></span>
+            <span style="background:#dce3f9;"></span>
+            <span style="background:#d0dbff;"></span>
+            <span style="background:#c1d0ff;"></span>
+            <span style="background:#b5c6ff;"></span>
+          </div>
+          <div class="dist-pointer" id="distPointer"></div>
+          <p class="dist-caption">수시 모집 동일 전형 잠정분포 기준</p>
+        </div>
+
+        <div class="summary-box">
+          <div class="summary-title">메모</div>
+          <div style="font-size:.66rem; line-height:1.4; color:#485061;">
+            • 실제 Python 백엔드와 연결된 점수를 보여줍니다. <br/>
+            • 커트라인과 합격 예측은 서버에서 계산한 값을 기준으로 합니다.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 오른쪽 아래 수뭉이 이미지 -->
+  <img src="dataproject/Sumung3.png" alt="수뭉이" class="sumung-img" />
+
+  <!-- footer -->
+  <footer>© 상명대학교 | 생기부 통합 로그인 시스템</footer>
+
+  <script>
+    const barList = document.getElementById('barList');
+    const totalScoreEl = document.getElementById('totalScore');
+    const cutlineEl = document.getElementById('cutline');
+    const passResultEl = document.getElementById('passResult');
+    const passDeltaEl = document.getElementById('passDelta');
+    const rankEl = document.getElementById('rank');
+    const rankDetailEl = document.getElementById('rankDetail');
+    const tendencyBadge = document.getElementById('tendency-badge');
+    const likelihoodPointer = document.getElementById('likelihoodPointer');
+    const distPointer = document.getElementById('distPointer');
+    const likeText = document.getElementById('likeText');
+
+    function renderBars(items){
+      const maxScore = Math.max(...items.map(it => it.score));
+      items.forEach(it=>{
+        const row = document.createElement('div');
+        row.className = 'bar-row';
+
+        const meta = document.createElement('div');
+        meta.className = 'bar-meta';
+        meta.innerHTML = `<div class="bar-title">${it.name}</div><div class="bar-sub">${it.desc}</div>`;
+
+        const track = document.createElement('div');
+        track.className = 'bar-track';
+        const fill = document.createElement('div');
+        fill.className = 'bar-fill';
+        const ratio = (it.score / maxScore) * 100;
+        setTimeout(()=>{ fill.style.width = ratio.toFixed(1) + '%'; }, 200);
+        track.appendChild(fill);
+
+        const val = document.createElement('div');
+        val.className = 'bar-val';
+        val.textContent = it.score + '점';
+
+        row.appendChild(meta);
+        row.appendChild(track);
+        row.appendChild(val);
+
+        barList.appendChild(row);
+      });
+    }
+
+    function renderSummary(data){
+      const total = data.items.reduce((acc,cur)=>acc+cur.score,0);
+      totalScoreEl.textContent = total + '점';
+      cutlineEl.textContent = data.cutline + '점';
+
+      const diff = total - data.cutline;
+      if(diff >= 0){
+        passResultEl.textContent = '합격권';
+        passResultEl.style.color = 'var(--success)';
+        passDeltaEl.textContent = '기준보다 +' + diff + '점';
+      }else{
+        passResultEl.textContent = '불합격권';
+        passResultEl.style.color = 'var(--danger)';
+        passDeltaEl.textContent = '기준보다 ' + diff + '점';
+      }
+
+      rankEl.textContent = data.rank + '등';
+      rankDetailEl.textContent = `(총 ${data.totalCandidate}명 중)`;
+
+      const cut = data.cutline;
+      const diffRate = (total - cut) / cut * 100;
+      let tendency = '';
+      let pointerPos = 50;
+      if(diffRate >= 5){
+        tendency = '상향';
+        pointerPos = 82;
+        tendencyBadge.style.background = '#e1f7e9';
+        tendencyBadge.style.color = '#0f766e';
+      }else if(diffRate > -5 && diffRate < 5){
+        tendency = '적정';
+        pointerPos = 50;
+        tendencyBadge.style.background = '#eef3ff';
+        tendencyBadge.style.color = '#365bd6';
+      }else{
+        tendency = '하향';
+        pointerPos = 16;
+        tendencyBadge.style.background = '#fde3e6';
+        tendencyBadge.style.color = '#be123c';
+      }
+      tendencyBadge.textContent = tendency;
+      likeText.textContent = tendency;
+      likelihoodPointer.style.setProperty('--pos', pointerPos + '%');
+      distPointer.style.left = pointerPos + '%';
+    }
+
+    // 백엔드 API 호출
+    (async () => {
+      const params = new URLSearchParams(window.location.search);
+      const mode = params.get('mode') || 'existing';
+      const college = params.get('college') || '전체';
+
+      try {
+        const res = await fetch(`/api/report?mode=${encodeURIComponent(mode)}&college=${encodeURIComponent(college)}`);
+        if (!res.ok) {
+          throw new Error('API 응답 오류: ' + res.status);
+        }
+        const data = await res.json();
+        console.log('API data:', data);
+        renderBars(data.items);
+        renderSummary(data);
+      } catch (err) {
+        console.error(err);
+        alert('리포트 데이터를 불러오지 못했습니다.');
+      }
+    })();
+  </script>
+</body>
+</html>
